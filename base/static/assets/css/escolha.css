@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #090499;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/03/21/11/art-2578353_960_720.jpg');
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+body::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.dd {
+    background-color: #ffffffc9;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(145, 145, 146, 0.452);
+    text-align: left;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 400px; /* Adicionado para limitar a largura em telas grandes */
+    margin: 0 auto; /* Adicionado espaçamento externo para telas menores */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+select {
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background-color: #3155A4;
+    color: #f8f8f8;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 1200px){
+    body {
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-size: 100%;
+        background-image: url('/static/assets/src/imagens/fundoMedia.jpeg');
+        background-repeat: no-repeat;
+    }
+}
